@@ -1,0 +1,12 @@
+name: "No Failures"
+description: "Fails if any previous jobs (based on needs) are marked as failures"
+inputs:
+  github-token:
+    description: "the GitHub API token used to query about the workflow run state"
+    default: ${{ github.token }}
+  failure-statuses:
+    description: "Job statuses that should cause this action to be marked as a failure"
+    default: '["failure", "cancelled"]'
+runs:
+  using: "node12"
+  main: main.js

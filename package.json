@@ -1,0 +1,24 @@
+{
+  "name": "no-failures-action",
+  "version": "0.1.0",
+  "description": "Github Action that fails if any dependent jobs fail",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crossnokaye/no-failures-action.git"
+  },
+  "author": "CrossnoKaye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crossnokaye/no-failures-action/issues"
+  },
+  "homepage": "https://github.com/crossnokaye/no-failures-action#readme",
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}
