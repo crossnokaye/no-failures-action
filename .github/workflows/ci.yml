@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+
+jobs:
+  no-failures:
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - use: crossnokaye/no-failures-action@v0.1.0
