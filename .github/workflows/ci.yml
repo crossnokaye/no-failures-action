@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
     steps:
-      - use: crossnokaye/no-failures-action@v0.1.0
+      - uses: crossnokaye/no-failures-action@v0.1.0
